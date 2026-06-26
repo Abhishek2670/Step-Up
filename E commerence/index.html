@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StepUp Shoes | Responsive Ecommerce Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <nav class="nav-shell" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="StepUp home">
+          <span class="brand-mark">S</span>
+          <span>StepUp</span>
+        </a>
+
+        <button class="icon-button menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#shop">Shop</a>
+          <a href="#featured">Featured</a>
+          <a href="#deals">Deals</a>
+          <a href="#support">Support</a>
+        </div>
+
+        <div class="nav-actions">
+          <label class="search-box" for="productSearch">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m21 21-4.3-4.3M10.8 18a7.2 7.2 0 1 1 0-14.4 7.2 7.2 0 0 1 0 14.4Z" />
+            </svg>
+            <input id="productSearch" type="search" placeholder="Search shoes" autocomplete="off" />
+          </label>
+
+          <button class="cart-button" type="button" data-cart-open aria-label="Open cart">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 6h15l-1.7 8.4a2 2 0 0 1-2 1.6H9a2 2 0 0 1-2-1.6L5 3H2" />
+              <path d="M9 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM18 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" />
+            </svg>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="heroTitle">
+        <img class="hero-image" src="assets/hero-sneakers.jpg" alt="Premium teal and red running sneakers in a modern studio" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">New season drops</p>
+          <h1 id="heroTitle">Shoes built for every move.</h1>
+          <p>
+            Discover responsive cushioning, everyday comfort, and street-ready
+            style in one curated sneaker shop.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#shop">Shop collection</a>
+            <a class="secondary-link" href="#featured">View featured</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Shopping benefits">
+        <div>
+          <strong>Free shipping</strong>
+          <span>On orders over $75</span>
+        </div>
+        <div>
+          <strong>Easy returns</strong>
+          <span>30-day fit guarantee</span>
+        </div>
+        <div>
+          <strong>Secure checkout</strong>
+          <span>Fast and protected</span>
+        </div>
+      </section>
+
+      <section class="section-shell featured" id="featured" aria-labelledby="featuredTitle">
+        <div class="section-heading">
+          <p class="eyebrow">Featured fit</p>
+          <h2 id="featuredTitle">Performance details with clean daily style.</h2>
+          <p>
+            Shop shoes selected for cushion, grip, and long-day comfort across
+            workouts, commutes, and weekends.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <span>01</span>
+            <h3>Responsive foam</h3>
+            <p>Soft landings with enough rebound for fast transitions.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Breathable uppers</h3>
+            <p>Lightweight mesh and textile layers keep airflow steady.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Grip that adapts</h3>
+            <p>Road, trail, and lifestyle soles matched to how you move.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell shop-section" id="shop" aria-labelledby="shopTitle">
+        <div class="shop-topline">
+          <div>
+            <p class="eyebrow">Shop shoes</p>
+            <h2 id="shopTitle">Popular sneakers</h2>
+          </div>
+          <div class="filter-tabs" role="tablist" aria-label="Filter products">
+            <button class="filter-tab active" type="button" data-filter="all">All</button>
+            <button class="filter-tab" type="button" data-filter="running">Running</button>
+            <button class="filter-tab" type="button" data-filter="walking">Walking</button>
+            <button class="filter-tab" type="button" data-filter="trail">Trail</button>
+            <button class="filter-tab" type="button" data-filter="casual">Casual</button>
+          </div>
+        </div>
+        <div class="products-grid" id="productsGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="deal-band" id="deals" aria-labelledby="dealTitle">
+        <div>
+          <p class="eyebrow">Limited offer</p>
+          <h2 id="dealTitle">Buy any two pairs and save 15% today.</h2>
+        </div>
+        <a class="primary-link compact" href="#shop">Browse deals</a>
+      </section>
+
+      <section class="section-shell support" id="support" aria-labelledby="supportTitle">
+        <div>
+          <p class="eyebrow">Need the right size?</p>
+          <h2 id="supportTitle">Find your fit before checkout.</h2>
+        </div>
+        <form class="newsletter-form">
+          <label for="email">Get restock alerts and size tips</label>
+          <div>
+            <input id="email" type="email" placeholder="Enter your email" required />
+            <button class="primary-link button-reset" type="submit">Notify me</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+      <div class="cart-panel">
+        <div class="cart-header">
+          <div>
+            <p class="eyebrow">Your cart</p>
+            <h2>Selected shoes</h2>
+          </div>
+          <button class="icon-button" type="button" data-cart-close aria-label="Close cart">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M18 6 6 18M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-empty" id="cartEmpty">Your cart is empty.</div>
+        <div class="cart-footer">
+          <div class="cart-total">
+            <span>Total</span>
+            <strong id="cartTotal">$0</strong>
+          </div>
+          <button class="checkout-button" type="button">Checkout</button>
+        </div>
+      </div>
+    </aside>
+
+    <script src="script.js"></script>
+  </body>
+</html>
